@@ -20,6 +20,7 @@ if [ ! -f "/firstrun" ]; then
 	useradd --home-dir /usr/local/share/openvas openvas-sync
 	chown openvas-sync:openvas-sync -R /usr/local/share/openvas
 	chown openvas-sync:openvas-sync -R /usr/local/var/lib/openvas
+	chown openvas-sync:openvas-sync -R /usr/local/var/run
 
 	touch /firstrun
 fi
